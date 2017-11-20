@@ -353,6 +353,11 @@ extension PhotosViewController {
                     closure(asset)
                 }
             }
+        } else {
+            let alertController = UIAlertController(title: nil, message: "Maximum is \(settings.maxNumberOfSelections) photos", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
         }
 
         return false
