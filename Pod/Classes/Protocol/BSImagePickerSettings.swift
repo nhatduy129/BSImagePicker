@@ -31,6 +31,7 @@ public protocol BSImagePickerSettings {
     */
     var maxNumberOfSelections: Int { get set }
     
+    var maxNumberOfPhotos: Int {get set}
     /**
     Character to use for selection. If nil, selection number will be used
     */
