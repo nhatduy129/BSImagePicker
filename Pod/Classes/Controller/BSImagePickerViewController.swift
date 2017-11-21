@@ -151,10 +151,10 @@ extension BSImagePickerViewController: BSImagePickerSettings {
     
     @objc public var maxNumberOfPhotos: Int {
         get {
-            return settings.maxNumberOfSelections
+            return settings.maxNumberOfPhotos
         }
         set {
-            settings.maxNumberOfSelections = newValue
+            settings.maxNumberOfPhotos = newValue
         }
     }
     
